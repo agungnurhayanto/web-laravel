@@ -18,7 +18,11 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return view('about');
+    return view('about',[
+        "name" => "Agung Nurhayanto",
+        "email" => "agung.nex.edp@gmail.com",
+        "image" => "yuda.jpg"
+    ]);
 });
 
 Route::get('/blog', function () {
